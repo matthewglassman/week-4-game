@@ -87,12 +87,23 @@ $("#lossCount").text(losses);
         alert("You won! Huzzah!");
         ++wins;
         $("winCount").text(wins);
+        restart();
       }
 
       function loses(){
         alert("You lost!");
         ++losses;
         $("#lossCount").text(losses);
+        restart();
+      }
+
+      function restart(){
+        targetScore(19, 120);
+        gem1;
+        gem2;
+        gem3;
+        gem4;
+        playerScore = 0;
       }
   }
 
